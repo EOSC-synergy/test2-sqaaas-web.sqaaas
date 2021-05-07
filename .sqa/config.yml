@@ -1,0 +1,16 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-web.git:
+      branch: ''
+      repo: https://github.com/EOSC-synergy/sqaaas-web.git
+environment:
+  JPL_DOCKERPUSH: node
+sqa_criteria:
+  qc_doc:
+    repos:
+      github.com/EOSC-synergy/sqaaas-web.git:
+        commands:
+        - npm install
+        container: node
+timeout: 600
